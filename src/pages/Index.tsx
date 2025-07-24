@@ -399,7 +399,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-muted/30 mt-16 py-8 border-t">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>&copy; 2024 ShopVibe. All rights reserved.</p>
+          <p>&copy; 2025 Cartella. All rights reserved.</p>
+          <p>Search Optimiser</p>
         </div>
       </footer>
     </div>

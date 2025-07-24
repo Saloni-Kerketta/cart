@@ -40,11 +40,11 @@ const About = () => {
         {/* Hero Section */}
         <section className="text-center py-16 mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            About ShopVibe
+            About Cartella
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in">
             We're passionate about bringing you the best products at unbeatable prices. 
-            Founded in 2024, ShopVibe has become your trusted destination for quality products 
+            Founded in 2025, Cartella has become your trusted destination for quality products 
             across electronics, fashion, home goods, and more.
           </p>
           <Button size="lg" className="animate-slide-up">
@@ -58,7 +58,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-muted-foreground mb-4">
-                At ShopVibe, we believe shopping should be enjoyable, convenient, and accessible to everyone. 
+                At Cartella, we believe shopping should be enjoyable, convenient, and accessible to everyone. 
                 Our mission is to curate the best products from trusted brands and emerging creators, 
                 ensuring every purchase brings value to your life.
               </p>
@@ -82,7 +82,7 @@ const About = () => {
 
         {/* Features Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose ShopVibe?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Cartella?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
@@ -105,9 +105,10 @@ const About = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Alex Johnson", role: "CEO & Founder", bio: "Passionate entrepreneur with 10+ years in e-commerce" },
-              { name: "Sarah Chen", role: "Head of Product", bio: "Expert in user experience and product curation" },
-              { name: "Mike Rodriguez", role: "CTO", bio: "Technology leader focused on innovation and scalability" }
+              { name: "Akshat Gupta", role: "NLP/ML", bio: "Passionate Engineer" },
+              { name: "Faique Ibrahimi", role: "Backend/ElasticSearch", bio: "Passionate Engineer" },
+              { name: "Saloni Kerketta", role: "Frontend", bio: "Passionate Engineer" },
+              { name: "Harsh Kumar", role: "NLP/ML", bio: "Passionate Engineer" }
             ].map((member, index) => (
               <Card key={index} className="text-center">
                 <CardHeader>

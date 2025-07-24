@@ -50,7 +50,7 @@ export function Header({ onSearch, cartCount }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link to="/" className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-              ShopVibe
+              Cartella
             </Link>
           </div>
 

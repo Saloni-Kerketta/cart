@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "support@shopvibe.com",
+      content: "support@cartella.com",
       description: "Send us an email anytime"
     },
     {
@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Commerce St, Suite 100",
-      description: "New York, NY 10001"
+      content: "BIT Mesra",
+      description: "Ranchi, Jharkhand"
     },
     {
       icon: Clock,
@@ -229,7 +229,7 @@ const Contact = () => {
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
                   <p className="text-muted-foreground">Interactive map would be here</p>
-                  <p className="text-sm text-muted-foreground">123 Commerce St, Suite 100, New York, NY 10001</p>
+                  <p className="text-sm text-muted-foreground">BIT Mesra, Ranchi, Jharkhand</p>
                 </div>
               </div>
             </CardContent>
