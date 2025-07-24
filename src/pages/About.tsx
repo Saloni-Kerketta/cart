@@ -43,9 +43,7 @@ const About = () => {
             About Cartella
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in">
-            We're passionate about bringing you the best products at unbeatable prices. 
-            Founded in 2025, Cartella has become your trusted destination for quality products 
-            across electronics, fashion, home goods, and more.
+          A system that uses NLP and relevance scoring to return the most appropriate products, even if the user's query is vague, misspelled, or natural language-based.
           </p>
           <Button size="lg" className="animate-slide-up">
             Start Shopping
@@ -59,12 +57,10 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-muted-foreground mb-4">
                 At Cartella, we believe shopping should be enjoyable, convenient, and accessible to everyone. 
-                Our mission is to curate the best products from trusted brands and emerging creators, 
-                ensuring every purchase brings value to your life.
+                A system that uses NLP and relevance scoring to return the most appropriate products, even if the user's query is vague, misspelled, or natural language-based.
               </p>
               <p className="text-muted-foreground">
-                We're committed to sustainability, fair trade practices, and supporting small businesses 
-                while providing our customers with exceptional service and competitive prices.
+              A system that uses NLP and relevance scoring to return the most appropriate products, even if the user's query is vague, misspelled, or natural language-based.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-8">
