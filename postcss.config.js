@@ -1,3 +1,4 @@
+//cartella
 export default {
   plugins: {
     tailwindcss: {},
