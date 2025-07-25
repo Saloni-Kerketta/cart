@@ -24,13 +24,20 @@ export function AdminProductForm({ product, onSubmit, onCancel }: AdminProductFo
     rating: product?.rating || 0,
     reviews: product?.reviews || 0,
     category: product?.category || "",
+    company: product?.company || "",
+    gender: product?.gender || "",
     isNew: product?.isNew || false,
     isSale: product?.isSale || false,
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formData);
+    // onSubmit(formData);
+    const submitData = {...formData};
+    if(!submitData.gender || submitData.gender === ""){
+      delete submitData.gender;
+    }
+    onSubmit(submitData as Omit<Product, 'id'>);
   };
 
   const handleInputChange = (field: string, value: any) => {
@@ -70,6 +77,32 @@ export function AdminProductForm({ product, onSubmit, onCancel }: AdminProductFo
                 placeholder="Enter category"
                 required
               />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="company">Company</Label>
+              <Input
+                id="company"
+                value={formData.company}
+                onChange={(e) => handleInputChange("company",e.target.value)}
+                placeholder="Enter Company Name"
+                required
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="gender">Gender (for clothing/Shoes)</Label>
+              <select
+                 id="gender"
+                 value={formData.gender}
+                 onChange={(e) => handleInputChange("gender",e.target.value)}
+                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <option value="">Select Gender (optional)</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Unisex">Unisex</option>
+              </select>
             </div>
 
             <div className="space-y-2">
